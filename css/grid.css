@@ -85,7 +85,7 @@ nav ul li {
 
 .container-fluid {
 	margin: 0 auto;
-	width: 80%;
+	width: 100%;
 }
 
 .row:before,
@@ -168,7 +168,7 @@ nav ul li {
 		Grid
 	*/
 	.container {
-		width: 76%;
+		width: 96%;
 	}
 
 	.col-1, .col-2, .col-3, .col-5, .col-6,

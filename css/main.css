@@ -10,52 +10,65 @@ body{
 	box-sizing: border-box;
 	margin: 0;
 }
+
 .container-x2{
 	width: 80%;
 	box-sizing: border-box;
 	margin: 0 auto;
 }
-h2{
+
+.navbar{
+	margin-bottom:0;
+}
+.navbar-brand{
+	margin-right: 50px;
+	margin-left: 220px;
+	padding: 40px;
+}
+.navbar-brand h1{
 	display: inline;
-	float: left;
 	padding: 5px;
 	font-family: 'Baloo Paaji', cursive;
 	font-size: 30px;
 	color: white ;
 }
-.titulo{
+.navbar-brand span{
 	font-family: 'Prompt', sans-serif;
 	font-size: 30px;
 	color: #F37673;
 }
 .fondo{
-	background-color: #037F99
+	background-color: #037F99;
 }
-ul li{
+.nav li {
 	list-style: none;
 	display: inline;
 	float: left;
 	margin-top: 25px;
 	margin-left: 10px;
 }
-ul li a{
+.menu{
 	text-decoration: none;
-	color:white;
+	color:#FDFBFB !important;
 	font-size: 15px;
 	font-family: 'Prompt', sans-serif;
 	padding: 12px;
 }
+
+
 .banner{
 	background-image: url(../img/img-1.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	padding: 30px;
 }
+
 .cuadro{
 	width: 70%;
 	margin: 0 auto;
 	background-color: rgba(9,123,141,0.7);
 }
+
 .cuadro h3{
 	padding: 20px;
 	font-family: 'Baloo Paaji', cursive;
@@ -65,6 +78,7 @@ ul li a{
 	margin-top: 30px;
 	margin-bottom:0;
 }
+
 .cuadro p{
 	color:white;
 	font-size: 18px;
@@ -75,6 +89,31 @@ ul li a{
 	margin-bottom: 30px;
 }
 /*termina parte paty*/
+.blanco{
+	background-color: #fff;
+
+}
+
+.banner_texto{
+    background-color: #037F99 ;
+    width: 250px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left:22px;
+    height: 400px;
+}
+
+.parrafo{
+    text-align: center;
+    color: #fff;
+    margin:10px;
+    padding: 10px;
+}
+
+.titulo-imagen{
+    text-align: center;
+    color:#F37673 ;
+}
 /*parte belén*/
 
 .fondo-color{
@@ -84,7 +123,6 @@ ul li a{
 .fondo-bunny1{
 	background-color:#EAFAFB;
 	margin:25px;
-
 }
 
 .fondo-bunny2{
@@ -104,7 +142,7 @@ ul li a{
 
 input{
 	border:20px solid #EAFAFB;
-	width: 77%;
+	width: 93%;
 	border-radius:8px;
 	padding:20px;
 	margin-top:25px;
@@ -138,28 +176,167 @@ input{
 	border-radius: 100%;
 	background-color: #fff;
 	margin:10px 33px;
-
 }
 
 /*termina mi parte (belen) - yo modifiqué el container-fluid de grid le puse el 80%*/
 
 /*parte final paty*/
-
 .conejos {
 	background-image: url(../img/bunny-head.png);
 	background-repeat: repeat-x;
-	background-size: 10%;
+	background-size:100px;
 	height: 100px;
 	margin: 10px;
 }
+
 footer {
 	background-color: #037F99;
 	border-top: 2px solid #F37673;
 }
+
 footer p{
 	color: white;
 	font-size: 18px;
 	font-family: 'Prompt', sans-serif;
 	padding: 20px;
 	text-align: center;
+}
+
+@media only screen and (min-width : 764px) and (max-width: 1306px){
+	.col-5{
+		display: none;
+	}
+
+	.col-3{
+		width: 80%;
+	}
+
+	.col-6{
+		width: 100%;
+	}
+
+	.navbar-brand{
+		margin-left:-30px;
+		margin-bottom:40px;
+	}
+
+
+	iframe{
+		width: 100%;
+	}
+
+	.fondo-color{
+		width: 96%;
+	}
+
+	.fondo-bunny1{
+		width:160%;
+     }
+
+     .cuadro h3{
+     	font-size: 30px;
+     }
+
+     .banner{
+     	width: 96%;
+     }
+
+     .blanco{
+     	width: 60%;
+     }
+
+     .banner_texto{
+     	width: 70%;
+     	height:750px;
+     }
+}
+
+
+
+
+@media only screen and (min-width: 480px) and (max-width: 768px){
+	.col-5{
+		display: none;
+	}
+	.col-6{
+		width: 100%;
+	}
+
+	.navbar-brand{
+		margin-left:-30px;
+		margin-bottom:40px;
+	}
+
+
+	iframe{
+		width: 100%;
+	}
+
+	.fondo-color{
+		width: 96%;
+	}
+
+	.fondo-bunny1{
+		width:178%;
+     }
+
+     .cuadro h3{
+     	font-size: 30px;
+     }
+
+     .banner{
+     	width: 96%;
+     }
+
+     .blanco{
+     	width: 96%;
+     }
+
+     .banner_texto{
+     	width: 93%;
+     	height:600px;
+     }
+}
+
+@media only screen and (max-width : 479px){
+	.col-5{
+		display: none;
+	}
+	.col-6{
+		width: 100%;
+	}
+
+	.navbar-brand{
+		margin-left:-30px;
+		margin-bottom:40px;
+	}
+
+	iframe{
+		width:100%;
+	}
+
+	.fondo-color{
+		width: 96%;
+	}
+
+	.fondo-bunny1{
+		width:84%;
+     }
+
+     .cuadro h3{
+     	font-size: 20px;
+     }
+
+     .banner{
+     	width: 100%;
+     }
+
+     .blanco{
+     	width: 100%;
+     }
+
+     .banner_texto{
+     	width: 86%;
+     	height: 400px;
+     }
 }
